@@ -1,0 +1,17 @@
+digraph {
+	A [label="Load Data (heart.csv)"]
+	B [label="Preprocessing (drop target)"]
+	C [label="Split Data (X, Y)"]
+	D [label="Train/Test split"]
+	E [label="Model Traning
+(Logistic Score)"]
+	F [label="Model Evaluation
+(Accuracy Score)"]
+	G [label=Prediction]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+}
